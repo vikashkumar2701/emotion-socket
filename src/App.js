@@ -2,6 +2,8 @@ import React from "react";
 import "./styles.css";
 import { useEffect, useState, useRef } from "react";
 
+import Moods from "./Moods";
+
 export default function App() {
   const [myemotion, setmyemotion] = useState(0);
   useEffect(() => {
@@ -22,7 +24,8 @@ export default function App() {
   }, []);
   return (
     <div className="App">
-      <>Vikash is {myemotion}</>
+      {/* <>Vikash is {myemotion}</> */}
+      <Moods mood="happy" />
     </div>
   );
 }
