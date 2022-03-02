@@ -1,0 +1,9 @@
+{
+    "songs" : ["https://www.youtube.com/embed/PJWemSzExXs",
+        "https://www.youtube.com/embed/jCEdTq3j-0U&list=RDQMyAJlmwrvMZA&index=1",
+        "https://www.youtube.com/embed/o1RducJbUdc&list=RDQMyAJlmwrvMZA&index=3",
+        "https://www.youtube.com/embed/HgIW7P4dsXU&list=RDQMyAJlmwrvMZA&index=4",
+        "https://www.youtube.com/embed/yIIGQB6EMAM&list=RDQMyAJlmwrvMZA&index=10"],
+
+    "shorts": "https://www.youtube.com/embed/DxZFMI_xdds"
+}

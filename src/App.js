@@ -22,8 +22,46 @@ export default function App() {
       setmyemotion(event.data);
     };
   }, []);
+
+  const numbers = [1, 2, 3, 4, 5];
   return (
     <div className="App">
+
+      <div className="header">
+        Emotionly
+      </div>
+      <div className="headerbottom">
+       Only for Tech-A-Thon Hackathon
+        </div>
+
+      <div className="container">
+    <div className="btnarea">
+    <button className="btn">Shorts</button>
+    <button className="btn">Youtube Videos</button>
+
+    </div>
+
+    <div className="contents">
+
+
+
+      </div>
+
+
+      <div className="recommendation1">
+
+        </div>
+
+        <div className="recommendation2">
+
+          </div>
+
+        
+
+        
+
+        </div>
+
       {/* <>Vikash is {myemotion}</> */}
       <Moods mood="happy" />
     </div>
