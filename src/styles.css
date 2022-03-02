@@ -6,6 +6,8 @@
 
 * {
   margin:0px;
+  scroll-behavior: none;
+  
 
 }
 
@@ -62,5 +64,22 @@
   align-content: normal;
 
 }
+
+.scroll{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+  justify-content: center;
+}
+
+iframe{
+  margin-left:10px;
+  margin-right:10px;
+  border:none;
+  margin-top:10px;
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+} 
 
 
