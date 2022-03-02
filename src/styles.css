@@ -69,8 +69,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  overflow-x: scroll;
-  justify-content: center;
+  
+  justify-content: left;
 }
 
 iframe{
@@ -78,7 +78,7 @@ iframe{
   margin-right:10px;
   border:none;
   margin-top:10px;
-
+  width:400px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 } 
 

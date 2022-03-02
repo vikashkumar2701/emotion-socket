@@ -44,11 +44,11 @@ export default function App() {
     <div className="contents">
 
     <div className="shorts">
-    <Moods mood="happy" />
+    <Moods mood="sad" />
 </div>
 
 <div className="Videos">
-asd
+
   </div>
 
       </div>
