@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react';
 
-const Moods = (props) => {
+const Shorts = (props) => {
         
     const [shorts, setShorts] = useState([]);
     const [loading, isLoading] = useState(false);
@@ -15,17 +15,18 @@ const Moods = (props) => {
 
         const data = await response.json();
 
-        setShorts(data.songs);
+        setShorts(data.meme);
         isLoading(false);
     }
 
     useEffect(()=>{
         getData()
         console.log(shorts)
-        
+        console.log(shorts)
         
     },[props.mood]);
 
+    
     
     
     
@@ -33,14 +34,10 @@ const Moods = (props) => {
     return(
     <>
     <div className="scroll">
-    {shorts.map( (short)=>
+    {shorts.map( (item)=>
        (
-        <iframe width="420" frameborder="0" wmode="Opaque" height="315"
-        src={short}>
-            
-        </iframe>
-
-       
+          
+        <img src={item} width="420" height="315"/>
            
        )
        )}
@@ -50,4 +47,4 @@ const Moods = (props) => {
     )
 }
 
-export default Moods;
+export default Shorts;

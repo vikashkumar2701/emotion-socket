@@ -3,7 +3,7 @@ import "./styles.css";
 import { useEffect, useState, useRef } from "react";
 
 import Moods from "./Moods";
-
+import Shorts from "./Shorts";
 export default function App() {
   let [btnversion, setbtnversion] = useState(1);
   const [myemotion, setmyemotion] = useState(0);
@@ -23,30 +23,33 @@ export default function App() {
       setmyemotion(event.data);
     };
   }, []);
-
-   useEffect(()=>{
-
-   })
   
   return (
     <div className="App">
-{myemotion}
+
       <div className="header">
         Emotionly
       </div>
+      <div className="sndheader">
+        <div className="leftss">
+          Current Emotion: 
+          {myemotion==0?"--":myemotion=="happy"?"Happy":myemotion=="sad"?"Sad":myemotion=="neutral"?"Neutral":myemotion}
+        </div>
       <div className="headerbottom">
        Only for Tech-A-Thon Hackathon
         </div>
+      </div>
+     
 
       <div className="container">
     <div className="btnarea">
     <button className="btn" onClick={()=>{
       setbtnversion(1);
-    }}>Shorts</button>
+    }}>Youtube Videos</button>
     <button className="btn" onClick={()=>{
       setbtnversion(2);
     }}
-    >Youtube Videos</button>
+    >Memes</button>
 
     </div>
 
@@ -55,10 +58,10 @@ export default function App() {
     {
     
       
-      btnversion==1 ? 
+      btnversion==1?
     
-        <div className="shorts">
-        <Moods mood={myemotion} />
+        <div className="videos">
+        <Moods mood={myemotion==0?"sad":myemotion} />
     </div>
      
    
@@ -66,8 +69,8 @@ export default function App() {
 {
    btnversion==2 ? 
 
-<div className="Videos">
-ASDASD
+<div className="meme">
+<Shorts mood={myemotion==0?"sad":myemotion} />
   </div>
 
   : ""

@@ -21,17 +21,7 @@
 
 }
 
-.header .next {
 
-}
-
-.headerbottom{
-  text-align: right;
-  padding:20px;
-  font-weight: 500;
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-  margin-bottom:20px;
-}
 
 
 .btn{
@@ -74,6 +64,19 @@
   
   justify-content: left;
 }
+.sndheader{
+ 
+  display: flex;
+    justify-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: right;
+    padding:20px;
+    font-weight: 500;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+}
 
 iframe{
   margin-left:10px;
@@ -88,6 +91,7 @@ iframe{
   iframe{
   width:100%;
   } 
+  
   
 }
 
