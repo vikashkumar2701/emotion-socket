@@ -2,7 +2,7 @@ import React,{useState, useEffect} from 'react';
 
 const Moods = (props) => {
         
-    const [content, setContent] = useState([]);
+    const [shorts, setShorts] = useState([]);
     const [loading, isLoading] = useState(false);
     const mood = props.mood;
     let show;
@@ -15,30 +15,37 @@ const Moods = (props) => {
 
         const data = await response.json();
 
-        setContent(data);
+        setShorts(data.songs);
         isLoading(false);
     }
 
     useEffect(()=>{
         getData()
+        console.log(shorts)
+        
+        
     },[]);
-    
-    console.log("songs = "+content.songs);
 
-    if(content.songs)
-        show = content.songs[1];
-    console.log("show = "+show);
+    
+    const [fruits_list,setFruits]=useState(["Apple","Orange","Banana"])
+    
+    
 
     return(
     <>
-        {loading && <div>loading...</div>}
-
-        {!loading &&
-            <iframe width="420" height="315"
-                src={show}>
-            </iframe>
-        }
-    </>)
+    <div>
+    {shorts.map( (short)=>
+       (
+        <iframe width="420" height="315"
+        src={short}>
+        </iframe>
+           
+       )
+       )}
+    </div>
+   
+    </>
+    )
 }
 
 export default Moods;

@@ -23,7 +23,7 @@ export default function App() {
     };
   }, []);
 
-  const numbers = [1, 2, 3, 4, 5];
+  
   return (
     <div className="App">
 
@@ -43,27 +43,17 @@ export default function App() {
 
     <div className="contents">
 
+    <div className="shorts">
+    <Moods mood="happy" />
+</div>
 
+<div className="Videos">
+
+  </div>
 
       </div>
-
-
-      <div className="recommendation1">
-
         </div>
-
-        <div className="recommendation2">
-
-          </div>
-
-        
-
-        
-
-        </div>
-
-      {/* <>Vikash is {myemotion}</> */}
-      <Moods mood="happy" />
+     
     </div>
   );
 }
