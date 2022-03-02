@@ -24,10 +24,13 @@ export default function App() {
     };
   }, []);
 
+   useEffect(()=>{
+
+   })
   
   return (
     <div className="App">
-
+{myemotion}
       <div className="header">
         Emotionly
       </div>
@@ -50,11 +53,15 @@ export default function App() {
     <div className="contents">
 
     {
+    
+      
       btnversion==1 ? 
- 
-    <div className="shorts">
-    <Moods mood={myemotion} />
-</div>
+    
+        <div className="shorts">
+        <Moods mood={myemotion} />
+    </div>
+     
+   
 :""}
 {
    btnversion==2 ? 

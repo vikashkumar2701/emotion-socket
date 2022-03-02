@@ -24,7 +24,7 @@ const Moods = (props) => {
         console.log(shorts)
         
         
-    },[]);
+    },[props.mood]);
 
     
     const [fruits_list,setFruits]=useState(["Apple","Orange","Banana"])
