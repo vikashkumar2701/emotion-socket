@@ -1,0 +1,10 @@
+{
+    "songs" : ["https://www.youtube.com/embed/BBlw4eY14CY",
+        "https://www.youtube.com/embed/pJgoHgpsb9I&list=PLP2qAKm-AAm9hIxpLbaMOcG2428lrssd5",
+        "https://www.youtube.com/embed/wOwblaKmyVw&list=PLP2qAKm-AAm9hIxpLbaMOcG2428lrssd5&index=2",
+        "https://www.youtube.com/embed/ngORmvyvAaI&list=PLP2qAKm-AAm9hIxpLbaMOcG2428lrssd5&index=4",
+        "https://www.youtube.com/embed/6Ejga4kJUts&list=PLP2qAKm-AAm9hIxpLbaMOcG2428lrssd5&index=10",
+         "https://www.youtube.com/embed/z6FukwueP1o"],
+     
+    "shorts": "https://www.youtube.com/shorts/zzHe_fs4lzw"
+}
