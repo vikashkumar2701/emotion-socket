@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from "react";
 import Moods from "./Moods";
 
 export default function App() {
+  let [btnversion, setbtnversion] = useState(1);
   const [myemotion, setmyemotion] = useState(0);
   useEffect(() => {
     var ws = new WebSocket(
@@ -36,21 +37,34 @@ export default function App() {
 
       <div className="container">
     <div className="btnarea">
-    <button className="btn">Shorts</button>
-    <button className="btn">Youtube Videos</button>
+    <button className="btn" onClick={()=>{
+      setbtnversion(1);
+    }}>Shorts</button>
+    <button className="btn" onClick={()=>{
+      setbtnversion(2);
+    }}
+    >Youtube Videos</button>
 
     </div>
 
     <div className="contents">
 
+    {
+      btnversion==1 ? 
+ 
     <div className="shorts">
-    <Moods mood="sad" />
+    <Moods mood={myemotion} />
 </div>
+:""}
+{
+   btnversion==2 ? 
 
 <div className="Videos">
-
+ASDASD
   </div>
 
+  : ""
+}
       </div>
         </div>
      

@@ -36,7 +36,7 @@ const Moods = (props) => {
     <div className="scroll">
     {shorts.map( (short)=>
        (
-        <iframe width="420" height="315"
+        <iframe width="420" frameborder="0" wmode="Opaque" height="315"
         src={short}>
         </iframe>
            
