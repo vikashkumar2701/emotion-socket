@@ -64,6 +64,10 @@
   
   justify-content: left;
 }
+
+.scroll img{
+  margin:1px;
+}
 .sndheader{
  
   display: flex;
@@ -91,6 +95,9 @@ iframe{
   iframe{
   width:100%;
   } 
+  .scroll img{
+    width:100%;
+  }
   
   
 }

@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 
 import Moods from "./Moods";
 import Shorts from "./Shorts";
+import Motivation from "./Motivation";
 export default function App() {
   let [btnversion, setbtnversion] = useState(1);
   const [myemotion, setmyemotion] = useState(0);
@@ -33,16 +34,22 @@ export default function App() {
       <div className="sndheader">
         <div className="leftss">
           Current Emotion: 
-          {myemotion==0?"--":myemotion=="happy"?"Happy":myemotion=="sad"?"Sad":myemotion=="neutral"?"Neutral":myemotion}
+          {myemotion==0?"--":myemotion=="happy"?"😊 Happy":myemotion=="sad"?"🥺 Sad":myemotion=="neutral"?"😐 Neutral":myemotion=="angry"?"😠 Angry":myemotion}
         </div>
       <div className="headerbottom">
        Only for Tech-A-Thon Hackathon
         </div>
+        
       </div>
      
 
       <div className="container">
+      <h1></h1>
     <div className="btnarea">
+    <button className="btn" onClick={()=>{
+      setbtnversion(3);
+    }}
+    >Motivation</button>
     <button className="btn" onClick={()=>{
       setbtnversion(1);
     }}>Youtube Videos</button>
@@ -54,7 +61,17 @@ export default function App() {
     </div>
 
     <div className="contents">
-
+    {
+    
+      
+    btnversion==3?
+  
+      <div className="videos">
+      <Motivation mood={myemotion==0?"sad":myemotion} />
+  </div>
+   
+ 
+:""}
     {
     
       

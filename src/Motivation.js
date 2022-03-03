@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react';
 
-const Shorts = (props) => {
+const Motivation = (props) => {
         
     const [shorts, setShorts] = useState([]);
     const [loading, isLoading] = useState(false);
@@ -15,18 +15,17 @@ const Shorts = (props) => {
 
         const data = await response.json();
 
-        setShorts(data.meme);
+        setShorts(data.motivation);
         isLoading(false);
     }
 
     useEffect(()=>{
         getData()
         console.log(shorts)
-        console.log(shorts)
+        
         
     },[props.mood]);
 
-    
     
     
     
@@ -34,10 +33,13 @@ const Shorts = (props) => {
     return(
     <>
     <div className="scroll">
-    {shorts.map( (item)=>
+    {shorts.map( (short)=>
        (
-          
-        <img src={item} width="410" height="315"/>
+        <img src={short} width="410" height="315"/>
+            
+        
+
+       
            
        )
        )}
@@ -47,4 +49,4 @@ const Shorts = (props) => {
     )
 }
 
-export default Shorts;
+export default Motivation;
