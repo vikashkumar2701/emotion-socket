@@ -6,7 +6,7 @@ import Moods from "./Moods";
 import Shorts from "./Shorts";
 import Motivation from "./Motivation";
 export default function App() {
-  let [btnversion, setbtnversion] = useState(1);
+  let [btnversion, setbtnversion] = useState(3);
   const [myemotion, setmyemotion] = useState(0);
   useEffect(() => {
     var ws = new WebSocket(
